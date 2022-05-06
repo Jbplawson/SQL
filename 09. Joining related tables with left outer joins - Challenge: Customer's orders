@@ -32,4 +32,4 @@ and total amount of money they've spent on orders. Sort the rows according to th
 
 SELECT customers.name, customers.email, SUM(orders.price) AS total_amount FROM orders
     LEFT OUTER JOIN customers ON  customers.id = orders.customer_id
-    GROUP BY customers.name ORDER BY customers.name 
+    GROUP BY customers.name ORDER BY customers.name;
