@@ -27,4 +27,4 @@ to its sequel's title (or NULL if it doesn't have a sequel).*/
 SELECT movies.title, sequel.title as sequel_title
     FROM movies
     LEFT OUTER JOIN movies sequel
-    ON movies.sequel_id = sequel.id
+    ON movies.sequel_id = sequel.id;
